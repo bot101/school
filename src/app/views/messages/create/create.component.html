@@ -1,0 +1,47 @@
+<div class="col-lg-7">
+  <div class="card">
+    <div class="card-header">
+      <span style="display: inline-block;" class="ml-auto">
+        <i class="fa fa-envelope"></i> New Message
+      </span>
+
+      <!-- <span (click)="newMessage()"  style="display: inline-block;" class="float-right ml-auto">
+        <i class="fa fa-plus"></i> Create Message
+      </span> -->
+
+    </div>
+    <div class="card-body">
+      <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
+        <div class="form-group row">
+          <label class="col-md-3 col-form-label" for="email-input">Email</label>
+          <div class="col-md-9">
+            <input type="email" id="email-input" name="email-input" class="form-control" placeholder="Jill Clarkson (email@company.com)" readonly autocomplete="email">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label class="col-md-3 col-form-label" for="select1">Recepient</label>
+          <div class="col-md-9">
+            <select id="select1" name="select1" class="form-control">
+              <option value="0">Please select</option>
+              <option value="1">Clark Kent</option>
+              <option value="2">Jane Doe</option>
+              <option value="3">John Doe</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label class="col-md-3 col-form-label" for="textarea-input">Message</label>
+          <div class="col-md-9">
+            <ckeditor [editor]="Editor" data="<p>Hello, world!</p>"></ckeditor>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="card-footer">
+      <button type="submit" class="btn btn-sm btn-primary float-right"><i class="fa fa-envelope-o" aria-hidden="true"></i> Send</button>
+      <!-- <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button> -->
+    </div>
+  </div>
+</div>

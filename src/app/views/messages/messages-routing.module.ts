@@ -1,6 +1,7 @@
 import { MessagesComponent } from './messages.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { CreateComponent } from './create/create.component';
 
 const routes: Routes = [
   {
@@ -8,6 +9,13 @@ const routes: Routes = [
     component: MessagesComponent,
     data: {
       title: 'Messages'
+    }
+  },
+  {
+    path: 'create',
+    component: CreateComponent,
+    data: {
+      title: 'Create Message'
     }
   }
 ];
