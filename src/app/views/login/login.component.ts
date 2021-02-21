@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,6 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent {
+
+  constructor(private readonly router: Router) { }
 
   signinType = 'admin';
 
@@ -27,6 +30,10 @@ export class LoginComponent {
   onSegmentedItemChange($event) {
     console.log('changed', $event);
     this.signinType = $event.id;
+  }
+
+  login() {
+    this.router.navigateByUrl('/home');
   }
 
   // onButtonSelected($event)

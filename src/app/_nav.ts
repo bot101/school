@@ -14,12 +14,12 @@ export const navItems: INavData[] = [
   },
   {
     name: 'Curriculum',
-    url: '/home',
-    icon: 'icon-home'
+    url: '/curriculum',
+    icon: 'icon-list'
   },
   {
     name: 'Homework',
-    url: '/home',
+    url: '/homework',
     icon: 'icon-notebook'
   },
   {
@@ -29,7 +29,7 @@ export const navItems: INavData[] = [
   },
   {
     name: 'Announcement',
-    url: '/home',
+    url: '/announcements',
     icon: 'icon-volume-2'
   },
 ];
