@@ -1,0 +1,8 @@
+<div>
+  <!-- <ng-template> -->
+    <span class="button" *ngFor="let button of buttons; let i = index" (click)="onSegmentClick(button, i)" [ngClass]="{'selected': selectedIndex === i}">
+      {{button.text}}
+    </span>
+  <!-- </ng-template> -->
+</div>
+

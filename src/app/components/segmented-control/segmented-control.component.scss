@@ -1,0 +1,18 @@
+div {
+  border: 1px solid rgb(99, 158, 216);
+  text-align: center;
+  // padding: 5px;
+  display: flex;
+  flex-direction: row;
+
+  .button {
+    // display: inline-flex;
+    width: auto;
+    padding: 5px;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    &.selected {
+      background-color: rgb(99, 158, 216);
+    }
+  }
+}
