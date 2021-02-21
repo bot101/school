@@ -22,12 +22,7 @@
         <div class="form-group row">
           <label class="col-md-3 col-form-label" for="select1">Recepient</label>
           <div class="col-md-9">
-            <select id="select1" name="select1" class="form-control">
-              <option value="0">Please select</option>
-              <option value="1">Clark Kent</option>
-              <option value="2">Jane Doe</option>
-              <option value="3">John Doe</option>
-            </select>
+            <input id="typeahead-basic" type="text" class="form-control" [(ngModel)]="recipient" placeholder="Start typing..." [ngbTypeahead]="search"/>
           </div>
         </div>
 

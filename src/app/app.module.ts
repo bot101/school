@@ -44,6 +44,7 @@ import { TabsModule } from 'ngx-bootstrap/tabs';
 import { ChartsModule } from 'ng2-charts';
 import { NgxSegmentedBarModule } from 'ngx-segmented-bar';
 import { SegmentedControlComponent } from './components/segmented-control/segmented-control.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   imports: [
@@ -62,6 +63,7 @@ import { SegmentedControlComponent } from './components/segmented-control/segmen
     IconModule,
     // NgxSegmentedBarModule,
     IconSetModule.forRoot(),
+    NgbModule,
   ],
   declarations: [
     AppComponent,
